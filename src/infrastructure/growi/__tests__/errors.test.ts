@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { AppError } from "../../shared/errors";
+import { AppError } from "../../../shared/errors";
 import {
   GrowiAuthenticationError,
   GrowiConnectionError,
@@ -8,7 +8,7 @@ import {
   GrowiNotFoundError,
   GrowiRequestError,
   GrowiResponseError,
-} from "./errors";
+} from "../errors";
 
 describe("GROWI errors", () => {
   test("GrowiError keeps GROWI request metadata", () => {

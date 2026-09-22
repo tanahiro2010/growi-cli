@@ -1,12 +1,12 @@
 import { describe, expect, test } from "bun:test";
-import { AppError } from "../../shared/errors";
+import { AppError } from "../../../shared/errors";
 import {
   ConfigFileSystemError,
   ProfileConfigConflictError,
   ProfileConfigNotFoundError,
   ProjectConfigConflictError,
   ProjectConfigNotFoundError,
-} from "./errors";
+} from "../errors";
 
 describe("config errors", () => {
   test("profile errors include stable codes and profile id details", () => {

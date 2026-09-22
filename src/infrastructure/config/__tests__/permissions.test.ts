@@ -5,9 +5,9 @@ import { afterEach, beforeEach, describe, expect, test } from "bun:test";
 import {
   ProjectConfigConflictError,
   ProjectConfigNotFoundError,
-} from "./errors";
-import { ProfileConfigRepository } from "./profile.repository";
-import { ProjectConfigRepository } from "./project.repository";
+} from "../errors";
+import { ProfileConfigRepository } from "../profile.repository";
+import { ProjectConfigRepository } from "../project.repository";
 
 const permissionOf = (targetPath: string): string => {
   return (fs.statSync(targetPath).mode & 0o777).toString(8).padStart(3, "0");

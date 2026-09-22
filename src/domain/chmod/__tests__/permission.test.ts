@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { ChmodPermission } from "./permission";
+import { ChmodPermission } from "../permission";
 
 describe("ChmodPermission", () => {
   test("creates permission from octal number and string", () => {

@@ -1,6 +1,6 @@
 import { Command } from "commander";
 import { describe, expect, test } from "bun:test";
-import CommandBase from "./base";
+import CommandBase from "../base";
 
 class LeafCommand extends CommandBase {
   protected readonly name = "leaf";

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { AppError, ConflictError, FileSystemError, NotFoundError, ValidationError } from ".";
+import { AppError, ConflictError, FileSystemError, NotFoundError, ValidationError } from "..";
 
 describe("shared errors", () => {
   test("AppError keeps name, code, cause, and details", () => {
